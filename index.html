@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>My Page</title>
 </head>
-<body>
-    <h1 class="text-3xl">
-hello world
-    </h1>
+<body class="bg-gray-100 text-gray-800">
+
+    <nav class="bg-white shadow">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">MyWebsite</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#" class="hover:text-blue-500">About</a></li>
+                <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="flex items-center justify-center min-h-[70vh]">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold mb-4">
+                Hello World 👋
+            </h1>
+            <p class="text-lg text-gray-600 mb-6">
+                This is a simple Tailwind CSS page.
+            </p>
+            <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+                Get Started
+            </button>
+        </div>
+    </section>
+    
+    <footer class="bg-white border-t">
+        <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+            © 2025 MyWebsite. All rights reserved.
+        </div>
+    </footer>
+
 </body>
 </html>
