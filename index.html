@@ -1,43 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./output.css" />
-    <title>My Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./output.css">
+  <title>DHR Traderer | Stock Market Insights</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-900 text-gray-100 font-sans">
 
-    <nav class="bg-white shadow">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">MyWebsite</h1>
-            <ul class="flex space-x-6">
-                <li><a href="#" class="hover:text-blue-500">Home</a></li>
-                <li><a href="#" class="hover:text-blue-500">About</a></li>
-                <li><a href="#" class="hover:text-blue-500">Contact</a></li>
-            </ul>
-        </div>
+<header class="bg-gray-950 shadow">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-indigo-400">DHR Trader</h1>
+    <nav class="space-x-6 text-sm">
+      <a href="index.html" class="hover:text-indigo-400">Home</a>
+      <a href="about.html" class="hover:text-indigo-400">About</a>
+      <a href="courses.html" class="hover:text-indigo-400">Courses</a>
+      <a href="services.html" class="hover:text-indigo-400">Services</a>
+      <a href="contact.html" class="hover:text-indigo-400">Contact</a>
     </nav>
+  </div>
+</header>
 
-    <section class="flex items-center justify-center min-h-[70vh]">
-        <div class="text-center">
-            <h1 class="text-4xl font-bold mb-4">
-                Hello World 👋
-            </h1>
-            <p class="text-lg text-gray-600 mb-6">
-                This is a simple Tailwind CSS page.
-            </p>
-            <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
-                Get Started
-            </button>
+<section class="min-h-screen bg-cover bg-center relative" style="background-image:url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3');">
+  <div class="absolute inset-0 bg-black/70"></div>
+  <div class="relative z-10 flex items-center justify-center min-h-screen text-center px-6">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-6">Smart Stock Market Trading</h2>
+      <p class="max-w-2xl mx-auto text-gray-300 mb-8">Live market insights, expert analysis and powerful tools to help you trade confidently.</p>
+      <div class="space-x-4">
+        <a href="#" class="bg-indigo-500 hover:bg-indigo-600 px-8 py-3 rounded-full">Get Started</a>
+        <a href="#" class="border border-indigo-400 px-8 py-3 rounded-full hover:bg-indigo-400 hover:text-black">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-gray-900">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-16">Market Segments</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div class="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition">
+        <h4 class="text-xl font-semibold text-indigo-400 mb-3">Equity Market</h4>
+        <p class="text-gray-300">Buy and sell shares of top companies with real-time stock data.</p>
+      </div>
+
+      <div class="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition">
+        <h4 class="text-xl font-semibold text-indigo-400 mb-3">Forex Market</h4>
+        <p class="text-gray-300">Trade global currencies 24/5 with powerful technical analysis.</p>
+      </div>
+
+      <div class="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition">
+        <h4 class="text-xl font-semibold text-indigo-400 mb-3">Commodity Market</h4>
+        <p class="text-gray-300">Trade gold, silver, crude oil and other commodities securely.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-24 bg-gray-950">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-16">Why Choose Us</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div class="text-center">
+        <div class="text-indigo-400 text-4xl mb-4">📊</div>
+        <h4 class="font-semibold text-lg mb-2">Live Charts</h4>
+        <p class="text-gray-400">Advanced charts with technical indicators.</p>
+      </div>
+
+      <div class="text-center">
+        <div class="text-indigo-400 text-4xl mb-4">🧠</div>
+        <h4 class="font-semibold text-lg mb-2">Expert Analysis</h4>
+        <p class="text-gray-400">Market insights from experienced traders.</p>
+      </div>
+
+      <div class="text-center">
+        <div class="text-indigo-400 text-4xl mb-4">🔐</div>
+        <h4 class="font-semibold text-lg mb-2">Secure Platform</h4>
+        <p class="text-gray-400">Your data and trades are fully protected.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-gray-900">
+  <div class="container mx-auto px-6 max-w-xl">
+    <h3 class="text-3xl font-bold text-center mb-10">Contact Us</h3>
+    <form class="space-y-6">
+      <input type="text" placeholder="Your Name" class="w-full bg-gray-800 p-3 rounded outline-none" />
+      <input type="email" placeholder="Your Email" class="w-full bg-gray-800 p-3 rounded outline-none" />
+      <textarea placeholder="Your Message" class="w-full bg-gray-800 p-3 rounded outline-none h-32"></textarea>
+      <button class="w-full bg-indigo-500 hover:bg-indigo-600 py-3 rounded">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-gray-950 text-gray-400 body-font">
+  <div class="container mx-auto px-6 py-16">
+    <div class="flex flex-wrap md:text-left text-center -mx-4">
+
+      <!-- Company Info -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-8 md:mb-0">
+        <h2 class="text-indigo-400 text-lg font-bold mb-4">DHR Trader</h2>
+        <p class="text-gray-400">Smart trading insights and market updates for confident investors. Your trusted stock market partner.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-8 md:mb-0">
+        <h2 class="text-indigo-400 text-lg font-bold mb-4">Quick Links</h2>
+        <nav class="list-none space-y-2">
+          <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
+          <li><a href="about.html" class="hover:text-indigo-400">About</a></li>
+       <li>   <a href="courses.html" class="hover:text-indigo-400">Courses</a> </li>
+          <li><a href="services.html" class="hover:text-indigo-400">Services</a></li>
+          <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
+        </nav>
+      </div>
+
+      <!-- Markets -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-8 md:mb-0">
+        <h2 class="text-indigo-400 text-lg font-bold mb-4">Markets</h2>
+        <nav class="list-none space-y-2">
+          <li><a href="#" class="hover:text-indigo-400">Equity</a></li>
+          <li><a href="#" class="hover:text-indigo-400">Forex</a></li>
+          <li><a href="#" class="hover:text-indigo-400">Commodities</a></li>
+          <li><a href="#" class="hover:text-indigo-400">Crypto</a></li>
+        </nav>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="text-indigo-400 text-lg font-bold mb-4">Subscribe</h2>
+        <p class="text-gray-400 mb-4">Get the latest updates directly in your inbox.</p>
+        <div class="flex flex-wrap">
+          <input type="email" placeholder="Your Email" class="w-full md:w-auto flex-grow bg-gray-900 text-gray-100 p-3 rounded-l focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          <button class="bg-indigo-500 hover:bg-indigo-600 text-white p-3 rounded-r w-full md:w-auto mt-2 md:mt-0">Subscribe</button>
         </div>
-    </section>
-    
-    <footer class="bg-white border-t">
-        <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
-            © 2025 MyWebsite. All rights reserved.
-        </div>
-    </footer>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between text-gray-500">
+      <p>© 2025 DHR Trader — All Rights Reserved</p>
+      <div class="flex mt-4 md:mt-0 space-x-4">
+        <a href="#" class="hover:text-indigo-400">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="hover:text-indigo-400">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="hover:text-indigo-400">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
 </body>
 </html>

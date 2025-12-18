@@ -19,5 +19,4 @@ git config --global --unset user.email ""
 7.  git log                                       --  Check history
 8.  git checkout branch name                      --  branch switched
 9.  git push origin branch name                   --  Sends your local commits to a remote repository (like GitHub).
-10  git pull origin branch name                   --  Fetches changes from the remote repo and merges them into your local branch.
-11.      
+10.  git pull origin branch name                   --  Fetches changes from the remote repo and merges them into your local branch.
